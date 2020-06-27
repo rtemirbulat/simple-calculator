@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.calc {
+  width: 300px;
+  background-color: #f3f3f3;
+  color: black;
+}
+.screen {
+  /*Add prompting. .. .*/
+  color: black;
+  font-size: 25px;
+  text-align: right;
+  font-family: "Courier New", Courier, monospace;
+  padding: 20px 5px 20px 5px;
+}
+.table-row {
+  display: flex;
+  align-content: stretch;
+  justify-content: space-between;
+  margin-bottom: 0.5%;
+}
+.button-num {
+  align-self: stretch;
+  flex-grow: 1;
+  margin: 2px;
+  border-radius: 10px;
+  background-color: white;
+  border: none;
+  height: 45px;
+}
+.button-clear {
+  align-self: stretch;
+  flex-grow: 1;
+  margin: 2px;
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+}
+.button-back {
+  align-self: stretch;
+  flex-grow: 1;
+  margin: 2px;
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+}
+.button-operator {
+  font-size: 20px;
+  flex-grow: 0.2;
+  height: 45px;
+  align-self: stretch;
+  margin: 2px;
+  width: 50px;
+  color: #31a7e6;
+  border: none;
+  background-color: white;
+  border-radius: 10px;
+}
+.button-operator:nth-child(2) {
+  background-color: #31a7e6;
+  color: white;
+  border: none;
+}
+.screen-input {
+  border: none;
+  background-color: inherit;
+  text-align: right;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
